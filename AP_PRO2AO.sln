@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesweek01", "Lesweek01", "{9600D645-9E0F-404B-A9EB-4404FF8C934B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oefening01_PersonEncapsulation", "Lesweek01\Oefening01_PersonEncapsulation\Oefening01_PersonEncapsulation.csproj", "{248363FA-3A36-4774-809D-D0CA4B592D53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oefening02_Casting", "Lesweek01\Oefening02_Casting\Oefening02_Casting.csproj", "{99AEC124-B2AA-457E-AFBE-8208866FC67E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oefening03_Interfaces", "Lesweek01\Oefening03_Interfaces\Oefening03_Interfaces.csproj", "{79FF5C7E-0824-4BA0-8F86-57CE4500715B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening04_CastingInheritance", "Lesweek01\Oefening04_CastingInheritance\Oefening04_CastingInheritance.csproj", "{49199176-59BB-4EC8-B5D6-854D9138C8BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{248363FA-3A36-4774-809D-D0CA4B592D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{248363FA-3A36-4774-809D-D0CA4B592D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{248363FA-3A36-4774-809D-D0CA4B592D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{248363FA-3A36-4774-809D-D0CA4B592D53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99AEC124-B2AA-457E-AFBE-8208866FC67E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99AEC124-B2AA-457E-AFBE-8208866FC67E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99AEC124-B2AA-457E-AFBE-8208866FC67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99AEC124-B2AA-457E-AFBE-8208866FC67E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79FF5C7E-0824-4BA0-8F86-57CE4500715B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79FF5C7E-0824-4BA0-8F86-57CE4500715B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79FF5C7E-0824-4BA0-8F86-57CE4500715B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79FF5C7E-0824-4BA0-8F86-57CE4500715B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49199176-59BB-4EC8-B5D6-854D9138C8BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49199176-59BB-4EC8-B5D6-854D9138C8BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49199176-59BB-4EC8-B5D6-854D9138C8BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49199176-59BB-4EC8-B5D6-854D9138C8BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{248363FA-3A36-4774-809D-D0CA4B592D53} = {9600D645-9E0F-404B-A9EB-4404FF8C934B}
+		{99AEC124-B2AA-457E-AFBE-8208866FC67E} = {9600D645-9E0F-404B-A9EB-4404FF8C934B}
+		{79FF5C7E-0824-4BA0-8F86-57CE4500715B} = {9600D645-9E0F-404B-A9EB-4404FF8C934B}
+		{49199176-59BB-4EC8-B5D6-854D9138C8BA} = {9600D645-9E0F-404B-A9EB-4404FF8C934B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59EE7BAD-F019-4450-AABA-C24BA73C74EE}
+	EndGlobalSection
+EndGlobal
