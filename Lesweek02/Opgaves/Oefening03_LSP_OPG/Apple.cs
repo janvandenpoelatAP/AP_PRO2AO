@@ -4,8 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Oefening03_Interfaces;
-public abstract class Animal
+namespace Oefening03_LSP_OPG;
+public class Apple
 {
-    public int Age { get; set; }
+    public virtual string GetColor()
+    {
+        return "Red";
+    }
 }

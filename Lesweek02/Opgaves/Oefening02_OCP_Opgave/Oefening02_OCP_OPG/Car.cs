@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Oefening03_Interfaces;
-public abstract class Animal
+namespace Oefening02_OCP_OPG;
+public class Car
 {
-    public int Age { get; set; }
+    public string Name { get; set; }    
 }

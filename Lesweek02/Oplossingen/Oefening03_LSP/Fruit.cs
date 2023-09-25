@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Oefening03_Interfaces;
-public abstract class Animal
+namespace Oefening03_LSP;
+public abstract class Fruit
 {
-    public int Age { get; set; }
+    public abstract string GetColor();
 }

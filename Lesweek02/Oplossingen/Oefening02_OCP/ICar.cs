@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Oefening03_Interfaces;
-public abstract class Animal
+namespace Oefening02_OCP;
+public interface ICar
 {
-    public int Age { get; set; }
+    string Name { get; }
+    string GetMileage();
 }
