@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Oefening04_ISP
 {
-    internal class Class1
+    public class OnlineOrder : IOrder, IOnlineOrder
     {
+        public void Purchase()
+        {
+            //Do purchase
+        }
+        public void ProcessCreditCard()
+        {
+            //process through credit card
+        }
     }
 }

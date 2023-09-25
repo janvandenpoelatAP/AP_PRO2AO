@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Oefening04_ISP
+namespace Oefening04_ISP;
+public class InpersionOrder : IOrder
 {
-    internal class InPërsonOrder
+    public void Purchase()
     {
+        //Do purchase
     }
 }

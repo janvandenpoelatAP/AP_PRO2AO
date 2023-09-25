@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Oefening04_ISP_OPG
+namespace Oefening04_ISP_OPG;
+public interface IOrder
 {
-    internal interface IOrder
-    {
-    }
+    void Purchase();
+    void ProcessCreditCard();
 }
