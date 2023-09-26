@@ -17,13 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesweek02", "Lesweek02", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Opgaves", "Opgaves", "{215FA7A3-03D9-44CD-AC6D-1066B767858E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oefening01_SRP_OPG", "Lesweek02\Opgaves\Oefening01_SRP_Opgave\Oefening01_SRP_OPG.csproj", "{F7D3F1AF-30F7-46CA-9F2A-17BF1BE77D23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oefening01_SRP_OPG", "Lesweek02\Opgaves\Oefening01_SRP_OPG\Oefening01_SRP_OPG.csproj", "{F7D3F1AF-30F7-46CA-9F2A-17BF1BE77D23}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Oplossingen", "Oplossingen", "{E8B8A9F7-B0EA-4D65-9300-E215C3C99138}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oefening01_SRP", "Lesweek02\Oplossingen\Oefening01_SRP\Oefening01_SRP.csproj", "{FD7B7F76-1FEA-4C82-A1F6-ABC0A35CF2D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening02_OCP_OPG", "Lesweek02\Opgaves\Oefening02_OCP_Opgave\Oefening02_OCP_OPG\Oefening02_OCP_OPG.csproj", "{E728810D-9D22-4833-8D39-7029B95B4E67}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening02_OCP_OPG", "Lesweek02\Opgaves\Oefening02_OCP_OPG\Oefening02_OCP_OPG.csproj", "{E728810D-9D22-4833-8D39-7029B95B4E67}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening02_OCP", "Lesweek02\Oplossingen\Oefening02_OCP\Oefening02_OCP.csproj", "{5C72D2BD-624A-4E21-AF38-751D5EADAC6A}"
 EndProject
