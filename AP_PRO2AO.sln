@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
@@ -17,13 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesweek02", "Lesweek02", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Opgaves", "Opgaves", "{215FA7A3-03D9-44CD-AC6D-1066B767858E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oefening01_SRP_OPG", "Lesweek02\Opgaves\Oefening01_SRP_Opgave\Oefening01_SRP_OPG.csproj", "{F7D3F1AF-30F7-46CA-9F2A-17BF1BE77D23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oefening01_SRP_OPG", "Lesweek02\Opgaves\Oefening01_SRP_OPG\Oefening01_SRP_OPG.csproj", "{F7D3F1AF-30F7-46CA-9F2A-17BF1BE77D23}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Oplossingen", "Oplossingen", "{E8B8A9F7-B0EA-4D65-9300-E215C3C99138}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oefening01_SRP", "Lesweek02\Oplossingen\Oefening01_SRP\Oefening01_SRP.csproj", "{FD7B7F76-1FEA-4C82-A1F6-ABC0A35CF2D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening02_OCP_OPG", "Lesweek02\Opgaves\Oefening02_OCP_Opgave\Oefening02_OCP_OPG\Oefening02_OCP_OPG.csproj", "{E728810D-9D22-4833-8D39-7029B95B4E67}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening02_OCP_OPG", "Lesweek02\Opgaves\Oefening02_OCP_OPG\Oefening02_OCP_OPG.csproj", "{E728810D-9D22-4833-8D39-7029B95B4E67}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oefening02_OCP", "Lesweek02\Oplossingen\Oefening02_OCP\Oefening02_OCP.csproj", "{5C72D2BD-624A-4E21-AF38-751D5EADAC6A}"
 EndProject
@@ -39,15 +39,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesweek03", "Lesweek03", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Voorbeelden", "Voorbeelden", "{7E98507E-4902-422C-9BBB-0E7F363CE7D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voorbeeld01_DIEmailSender", "Lesweek03\Voorbeelden\Voorbeeld01_DIEmailSender\Voorbeeld01_DIEmailSender.csproj", "{AD06D58C-C6CF-42AA-AA88-17FD7E89FE33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Voorbeeld01_DIEmailSender", "Lesweek03\Voorbeelden\Voorbeeld01_DIEmailSender\Voorbeeld01_DIEmailSender.csproj", "{AD06D58C-C6CF-42AA-AA88-17FD7E89FE33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voorbeeld02_DISamurai", "Lesweek03\Voorbeelden\Voorbeeld02_DISamurai\Voorbeeld02_DISamurai.csproj", "{AE88A2A2-1019-4135-A776-0EA86F667736}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Voorbeeld02_DISamurai", "Lesweek03\Voorbeelden\Voorbeeld02_DISamurai\Voorbeeld02_DISamurai.csproj", "{AE88A2A2-1019-4135-A776-0EA86F667736}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Oplossingen", "Oplossingen", "{48467F16-7B74-4034-88FC-73072376FADF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening01_DISamurai", "Lesweek03\Oplossingen\Oefening01_DISamurai\Oefening01_DISamurai.csproj", "{506329E0-14C6-4C18-8767-E4DADD84B2A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oefening01_DISamurai", "Lesweek03\Oplossingen\Oefening01_DISamurai\Oefening01_DISamurai.csproj", "{506329E0-14C6-4C18-8767-E4DADD84B2A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening02_DILogin", "Lesweek03\Oplossingen\Oefening02_DILogin\Oefening02_DILogin.csproj", "{E9CD683B-084E-4A9D-AA07-EA6BB355AF39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Oefening02_DILogin", "Lesweek03\Oplossingen\Oefening02_DILogin\Oefening02_DILogin.csproj", "{E9CD683B-084E-4A9D-AA07-EA6BB355AF39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesweek04", "Lesweek04", "{37C45F5F-7E98-4D27-8E58-B9B17EBFEFDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Voorbeelden", "Voorbeelden", "{DD7BA597-16D3-4B90-B9C7-19EF36846306}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voorbeeld01_HelloCore", "Lesweek04\Voorbeelden\Voorbeeld01_HelloCore\Voorbeeld01_HelloCore.csproj", "{791DBD11-DEA8-4A4C-9877-B0A16A3B3D7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voorbeeld02_HelloCore", "Lesweek04\Voorbeelden\Voorbeeld02_HelloCore\Voorbeeld02_HelloCore.csproj", "{58AE6FF9-0E71-408A-A58B-40258A4571CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,6 +127,14 @@ Global
 		{E9CD683B-084E-4A9D-AA07-EA6BB355AF39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9CD683B-084E-4A9D-AA07-EA6BB355AF39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9CD683B-084E-4A9D-AA07-EA6BB355AF39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{791DBD11-DEA8-4A4C-9877-B0A16A3B3D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{791DBD11-DEA8-4A4C-9877-B0A16A3B3D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{791DBD11-DEA8-4A4C-9877-B0A16A3B3D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{791DBD11-DEA8-4A4C-9877-B0A16A3B3D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58AE6FF9-0E71-408A-A58B-40258A4571CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58AE6FF9-0E71-408A-A58B-40258A4571CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58AE6FF9-0E71-408A-A58B-40258A4571CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58AE6FF9-0E71-408A-A58B-40258A4571CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -144,6 +160,9 @@ Global
 		{48467F16-7B74-4034-88FC-73072376FADF} = {16C47FFB-F26B-4CCF-AA87-D4EAE9DC2FAB}
 		{506329E0-14C6-4C18-8767-E4DADD84B2A5} = {48467F16-7B74-4034-88FC-73072376FADF}
 		{E9CD683B-084E-4A9D-AA07-EA6BB355AF39} = {48467F16-7B74-4034-88FC-73072376FADF}
+		{DD7BA597-16D3-4B90-B9C7-19EF36846306} = {37C45F5F-7E98-4D27-8E58-B9B17EBFEFDF}
+		{791DBD11-DEA8-4A4C-9877-B0A16A3B3D7F} = {DD7BA597-16D3-4B90-B9C7-19EF36846306}
+		{58AE6FF9-0E71-408A-A58B-40258A4571CE} = {DD7BA597-16D3-4B90-B9C7-19EF36846306}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {59EE7BAD-F019-4450-AABA-C24BA73C74EE}
