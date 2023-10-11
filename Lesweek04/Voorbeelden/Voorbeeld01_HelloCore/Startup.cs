@@ -31,7 +31,8 @@ public class Startup
             //{
             // throw new Exception();
             // await context.Response.WriteAsync(greeter.GetGreeting());
-            endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}");
+            //endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}");
+            endpoints.MapControllers();
             //});
         });
     }
