@@ -23,9 +23,4 @@ public class RestaurantDataInMemory : IRestaurantData
     {
         return restaurants.FirstOrDefault(x => x.Id == id);
     }
-    public void Add(Restaurant restaurant)
-    {
-        restaurant.Id = restaurants.Max(x => x.Id) + 1;
-        restaurants.Add(restaurant);
-    }
 }

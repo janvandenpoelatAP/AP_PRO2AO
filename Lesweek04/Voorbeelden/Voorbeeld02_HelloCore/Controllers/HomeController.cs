@@ -36,19 +36,4 @@ public class HomeController : Controller
         }
         return Ok(restaurant);
     }
-    [HttpPost]
-    public IActionResult Create([FromBody]RestaurantCreateViewModel restaurantCreateViewModel)
-    {
-        if (!ModelState.IsValid)
-        {
-            return BadRequest(ModelState);
-        }
-        var newRestaurant = new Restaurant()
-        {
-            Name = restaurantCreateViewModel.Name,
-            CuisineType = restaurantCreateViewModel.CuisineType,
-        };
-        restaurantData.Add(newRestaurant);
-        return CreatedAtAction(nameof(Detail), new { newRestaurant.Id }, newRestaurant);
-    }
 }

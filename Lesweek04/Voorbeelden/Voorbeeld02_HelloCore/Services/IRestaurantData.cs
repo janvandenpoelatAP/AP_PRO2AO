@@ -6,6 +6,5 @@ namespace Voorbeeld02_HelloCore.Services
     {
         IEnumerable<Restaurant> GetAll();
         Restaurant Get(int id);
-        void Add(Restaurant restaurant);
     }
 }

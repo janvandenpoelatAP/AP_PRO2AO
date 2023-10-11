@@ -1,6 +1,9 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+using Voorbeeld02_HelloCore;
 
-app.MapGet("/", () => "Hello World!");
-
-app.Run();
+await Host.CreateDefaultBuilder(args)
+    .ConfigureWebHostDefaults(webBuilder =>
+    {
+        webBuilder.UseStartup<Startup>();
+    })
+    .Build()
+    .RunAsync();
