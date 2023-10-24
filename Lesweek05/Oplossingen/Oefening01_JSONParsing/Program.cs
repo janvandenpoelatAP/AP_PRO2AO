@@ -25,14 +25,18 @@ string json = @"
 JsonSerializerOptions opties = new JsonSerializerOptions
 {
     PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-}; 
+};
 
-Boek[] boeken = JsonSerializer.Deserialize<Boek[]>(json, opties);
+// Stap 1: JSON-gegevens inladen
+List<Boek> boeken = JsonSerializer.Deserialize<List<Boek>>(json, opties);
 
-foreach (Boek boek in boeken)
-{
-    // rest
-}
+// Stap 2: Bereken het gemiddelde van alle waarderingen van boeken
+double gemiddeldeWaardering = boeken.Average(boek => boek.Waardering);
+Console.WriteLine($"Gemiddelde waardering van alle boeken: {gemiddeldeWaardering:F2}");
+
+// Stap 3: Identificeer het boek met de hoogste waardering
+var bestGewaardeerdBoek = boeken.OrderByDescending(boek => boek.Waardering).First();
+Console.WriteLine($"Het best gewaardeerde boek is \"{bestGewaardeerdBoek.Titel}\" door {bestGewaardeerdBoek.Auteur}");
 
 
 public class Boek

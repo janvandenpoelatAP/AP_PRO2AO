@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-using Voorbeeld05_HelloCore.Entities;
-using Voorbeeld05_HelloCore.Services;
-using Voorbeeld05_HelloCore.ViewModels;
+using Voorbeeld06_HelloCore.Entities;
+using Voorbeeld06_HelloCore.Services;
+using Voorbeeld06_HelloCore.ViewModels;
 
-namespace Voorbeeld05_HelloCore.Controllers;
+namespace Voorbeeld06_HelloCore.Controllers;
 
+[Route("[controller]/[action]")]
 public class HomeController : Controller
 {
     private readonly IRestaurantData restaurantData;
@@ -17,6 +18,7 @@ public class HomeController : Controller
         this.greeter = greeter;
     }
 
+    [HttpGet]
     public IActionResult Index()
     {
         //var restaurant = new Restaurant() { Id = 1, Name = "The Restaurant" };
@@ -27,6 +29,7 @@ public class HomeController : Controller
         model.CurrentMessage = greeter.GetGreeting();
         return new ObjectResult(model);
     }
+    [HttpGet("{id}")]
     public IActionResult Detail(int id)
     {
         var restaurant = restaurantData.Get(id);
@@ -36,7 +39,7 @@ public class HomeController : Controller
         }
         return Ok(restaurant);
     }
-    [HttpPost]
+    [HttpPost()]
     public IActionResult Create([FromBody] RestaurantCreateViewModel restaurantCreateViewModel)
     {
         if (!ModelState.IsValid)
@@ -50,5 +53,37 @@ public class HomeController : Controller
         };
         restaurantData.Add(newRestaurant);
         return CreatedAtAction(nameof(Detail), new { newRestaurant.Id }, newRestaurant);
+    }
+    [HttpDelete("{id}")]
+    public IActionResult Delete(int id)
+    {
+        var restaurant = restaurantData.Get(id);
+        if (restaurant is null)
+        {
+            return NotFound();
+        }
+        restaurantData.Delete(restaurant);
+        return NoContent();
+    }
+    [HttpPut("{id}")]
+    public IActionResult Update(int id, [FromBody] RestaurantUpdateViewModel restaurantUpdateViewModel)
+    {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest();
+        }
+        var restaurant = restaurantData.Get(id);
+        if (restaurant is null)
+        {
+            return NotFound();
+        }
+        var updatedRestaurant = new Restaurant()
+        {
+            Id = restaurant.Id,
+            Name = restaurantUpdateViewModel.Name,
+            CuisineType = restaurantUpdateViewModel.CuisineType
+        };
+        restaurantData.Update(updatedRestaurant);
+        return NoContent();
     }
 }

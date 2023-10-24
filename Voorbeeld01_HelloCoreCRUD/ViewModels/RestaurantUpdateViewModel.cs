@@ -1,9 +1,9 @@
-﻿using Voorbeeld05_HelloCore.Entities;
+﻿using  Voorbeeld06_HelloCore.Entities;
 using System.ComponentModel.DataAnnotations;
 
-namespace Voorbeeld05_HelloCore.ViewModels;
+namespace Voorbeeld06_HelloCore.ViewModels;
 
-public class RestaurantCreateViewModel
+public class RestaurantUpdateViewModel
 {
     [Required, MaxLength(80)]
     public string Name { get; set; }
