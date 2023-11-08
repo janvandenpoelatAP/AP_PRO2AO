@@ -1,4 +1,4 @@
-﻿namespace Oefening01_DISamurai;
+﻿namespace Oefening_03_01_DISamurai;
 public class Dagger : IWeapon
 {
     public void Hit(string target)

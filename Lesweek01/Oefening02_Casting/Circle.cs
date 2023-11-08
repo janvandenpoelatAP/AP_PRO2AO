@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Oefening02_Casting;
+﻿namespace Oefening_01_02_Casting;
 public class Circle
 {
     private int radius;

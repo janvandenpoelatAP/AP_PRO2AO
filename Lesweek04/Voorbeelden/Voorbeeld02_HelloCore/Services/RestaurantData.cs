@@ -1,7 +1,6 @@
-﻿using Voorbeeld02_HelloCore.Entities;
+﻿using Voorbeeld_04_02_HelloCore.Entities;
 
-namespace Voorbeeld02_HelloCore.Services;
-
+namespace Voorbeeld_04_02_HelloCore.Services;
 public class RestaurantDataInMemory : IRestaurantData
 {
     private static List<Restaurant> restaurants;

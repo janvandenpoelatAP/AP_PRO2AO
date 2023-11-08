@@ -1,4 +1,4 @@
-using Voorbeeld02_HelloCore;
+using Voorbeeld_04_02_HelloCore;
 
 await Host.CreateDefaultBuilder(args)
     .ConfigureWebHostDefaults(webBuilder =>

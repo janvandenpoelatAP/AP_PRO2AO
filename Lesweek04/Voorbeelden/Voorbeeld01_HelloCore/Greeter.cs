@@ -1,10 +1,8 @@
-﻿namespace Voorbeeld01_HelloCore;
-
+﻿namespace Voorbeeld_04_01_HelloCore;
 public interface IGreeter
 {
     string GetGreeting();
 }
-
 public class Greeter : IGreeter
 {
     private readonly IConfiguration configuration;

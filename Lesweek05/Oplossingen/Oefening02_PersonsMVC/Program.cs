@@ -1,4 +1,4 @@
-using Oefening02_PersonsMVC;
+using Oefening_05_02_PersonsMVC;
 
 await Host.CreateDefaultBuilder(args)
     .ConfigureWebHostDefaults(webBuilder =>

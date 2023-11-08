@@ -1,5 +1,5 @@
 ﻿using Ninject;
-using Oefening02_DILogin;
+using Oefening_03_02_DILogin;
 
 var kernel = new StandardKernel();
 kernel.Bind<ILogin>().To<HardCodedLoginAdapter>();

@@ -1,7 +1,6 @@
-﻿using Oefening02_PersonsMVC.Services;
+﻿using Oefening_05_02_PersonsMVC.Services;
 
-namespace Oefening02_PersonsMVC;
-
+namespace Oefening_05_02_PersonsMVC;
 public class Startup
 {
     public void ConfigureServices(IServiceCollection services)

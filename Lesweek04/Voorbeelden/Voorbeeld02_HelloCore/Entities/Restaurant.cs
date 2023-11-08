@@ -1,4 +1,4 @@
-﻿namespace Voorbeeld02_HelloCore.Entities;
+﻿namespace Voorbeeld_04_02_HelloCore.Entities;
 
 public class Restaurant
 {

@@ -1,11 +1,4 @@
-﻿using Oefening01_SRP;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Oefening01_SRP;
+﻿namespace Oefening_02_01_SRP;
 public class ServiceStationUtility : IGateUtility
 {
     public void OpenGate()

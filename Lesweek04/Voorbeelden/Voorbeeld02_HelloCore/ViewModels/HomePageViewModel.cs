@@ -1,7 +1,6 @@
-﻿using Voorbeeld02_HelloCore.Entities;
+﻿using Voorbeeld_04_02_HelloCore.Entities;
 
-namespace Voorbeeld02_HelloCore.ViewModels;
-
+namespace Voorbeeld_04_02_HelloCore.ViewModels;
 public class HomePageViewModel
 {
     public string CurrentMessage { get; set; }

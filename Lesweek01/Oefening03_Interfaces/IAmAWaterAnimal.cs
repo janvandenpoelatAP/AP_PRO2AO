@@ -1,4 +1,4 @@
-﻿namespace Oefening03_Interfaces
+﻿namespace Oefening_01_03_Interfaces
 {
     public interface IAmAWaterAnimal
     {

@@ -5,7 +5,6 @@ Persoon persoon = new Persoon
     Naam = "Alice",
     Leeftijd = 30
 };
-
 string json = JsonSerializer.Serialize(persoon);
 Console.WriteLine(json);
 

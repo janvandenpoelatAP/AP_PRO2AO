@@ -1,7 +1,6 @@
-﻿using Oefening02_PersonsMVC.Entities;
+﻿using Oefening_05_02_PersonsMVC.Entities;
 
-namespace Oefening02_PersonsMVC.Services;
-
+namespace Oefening_05_02_PersonsMVC.Services;
 public interface IPersonData
 {
     IEnumerable<Person> GetAll();

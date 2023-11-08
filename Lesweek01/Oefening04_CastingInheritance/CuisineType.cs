@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Oefening04_CastingInheritance;
+﻿namespace Oefening_01_04_CastingInheritance;
 public enum CuisineType
 {
     French,

@@ -1,10 +1,8 @@
-﻿using Voorbeeld02_HelloCore.Entities;
+﻿using Voorbeeld_04_02_HelloCore.Entities;
 
-namespace Voorbeeld02_HelloCore.Services
+namespace Voorbeeld_04_02_HelloCore.Services;
+public interface IRestaurantData
 {
-    public interface IRestaurantData
-    {
-        IEnumerable<Restaurant> GetAll();
-        Restaurant Get(int id);
-    }
+    IEnumerable<Restaurant> GetAll();
+    Restaurant Get(int id);
 }

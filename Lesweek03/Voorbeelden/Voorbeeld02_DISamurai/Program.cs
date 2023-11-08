@@ -1,5 +1,5 @@
 ﻿using Ninject;
-using Voorbeeld02_DISamurai;
+using Voorbeeld_03_02_DISamurai;
 
 //Create a new DI container
 var kernel = new StandardKernel();

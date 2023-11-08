@@ -12,14 +12,11 @@ string json = @"
             },
             ""hobbies"": [""Lezen"", ""Reizen""]
         }";
-
 JsonSerializerOptions opties = new JsonSerializerOptions
 {
     PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
 }; 
-
 Persoon persoon = JsonSerializer.Deserialize<Persoon>(json, opties);
-
 Console.WriteLine($"Naam: {persoon.Naam}, Leeftijd: {persoon.Leeftijd}");
 Console.WriteLine($"Straat: {persoon.Adres.Straat}, Gemeente: {persoon.Adres.Gemeente}");
 Console.WriteLine($"Hobbies: {string.Join(", ", persoon.Hobbies)}");

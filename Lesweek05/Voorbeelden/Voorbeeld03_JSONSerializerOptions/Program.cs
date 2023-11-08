@@ -6,7 +6,6 @@ JsonSerializerOptions opties = new JsonSerializerOptions
     PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
     Converters = { new JsonStringEnumConverter() }
 };
-
 // JSON-opties gebruiken bij serialisatie
 string json = JsonSerializer.Serialize(new Person { Naam = "Alice", Gender = Gender.V, Leeftijd = 30 }, opties);
 Console.WriteLine(json); // Geeft '{"naam":"Alice","leeftijd":30,"gender"="V"}' weer

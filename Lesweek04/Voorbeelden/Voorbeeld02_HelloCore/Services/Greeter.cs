@@ -1,4 +1,4 @@
-﻿namespace Voorbeeld02_HelloCore.Services;
+﻿namespace Voorbeeld_04_02_HelloCore.Services;
 
 public interface IGreeter
 {

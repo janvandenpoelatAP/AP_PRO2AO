@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace HelloCore.Controllers;
-
+﻿namespace Oefening_04_01_ASPMVC.Controllers;
 public class HomeController
 {
     public string Index()

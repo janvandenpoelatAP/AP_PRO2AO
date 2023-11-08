@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Voorbeeld01_DIEmailSender;
+﻿namespace Voorbeeld_03_01_DIEmailSender;
 public class PasswordResetHelper
 {
     private readonly IEmailSender emailSender;

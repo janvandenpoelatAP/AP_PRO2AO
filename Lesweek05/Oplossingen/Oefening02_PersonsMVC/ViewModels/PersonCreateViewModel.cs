@@ -1,8 +1,7 @@
-﻿using Oefening02_PersonsMVC.Entities;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using Oefening_05_02_PersonsMVC.Entities;
 
-namespace Oefening02_PersonsMVC.ViewModels;
-
+namespace Oefening_05_02_PersonsMVC.ViewModels;
 public class PersonCreateViewModel
 {
     [Required]

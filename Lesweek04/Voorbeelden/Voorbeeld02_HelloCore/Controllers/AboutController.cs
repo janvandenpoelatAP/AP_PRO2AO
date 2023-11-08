@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Voorbeeld02_HelloCore.Controllers;
-
+namespace Voorbeeld_04_02_HelloCore.Controllers;
 public class AboutController : Controller
 {
     public string Phone()

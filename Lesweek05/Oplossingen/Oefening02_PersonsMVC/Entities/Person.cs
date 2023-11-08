@@ -1,5 +1,4 @@
-﻿namespace Oefening02_PersonsMVC.Entities;
-
+﻿namespace Oefening_05_02_PersonsMVC.Entities;
 public enum Gender
 {
     F,

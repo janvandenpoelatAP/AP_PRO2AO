@@ -1,4 +1,4 @@
-﻿namespace Oefening01_DISamurai;
+﻿namespace Oefening_03_01_DISamurai;
 public interface IWeapon
 {
     void Hit(string target);

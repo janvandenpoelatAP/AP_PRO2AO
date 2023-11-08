@@ -1,5 +1,4 @@
-﻿namespace Oefening02_DILogin;
-
+﻿namespace Oefening_03_02_DILogin;
 public class VerySecretApplication
 {
     private readonly ILogin login;

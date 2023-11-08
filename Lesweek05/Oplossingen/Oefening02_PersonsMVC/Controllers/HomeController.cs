@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Oefening02_PersonsMVC.Entities;
-using Oefening02_PersonsMVC.Services;
-using Oefening02_PersonsMVC.ViewModels;
+using Oefening_05_02_PersonsMVC.Entities;
+using Oefening_05_02_PersonsMVC.Services;
+using Oefening_05_02_PersonsMVC.ViewModels;
 
-namespace Oefening02_PersonsMVC.Controllers;
-
+namespace Oefening_05_02_PersonsMVC.Controllers;
 public class HomeController : Controller
 {
     private IPersonData personData;

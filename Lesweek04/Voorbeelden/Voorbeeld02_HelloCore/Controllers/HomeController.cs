@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-using Voorbeeld02_HelloCore.Entities;
-using Voorbeeld02_HelloCore.Services;
-using Voorbeeld02_HelloCore.ViewModels;
+using Voorbeeld_04_02_HelloCore.Entities;
+using Voorbeeld_04_02_HelloCore.Services;
+using Voorbeeld_04_02_HelloCore.ViewModels;
 
-namespace HelloCore.Controllers;
+namespace Voorbeeld_04_02_HelloCore.Controllers;
 
 public class HomeController : Controller
 {

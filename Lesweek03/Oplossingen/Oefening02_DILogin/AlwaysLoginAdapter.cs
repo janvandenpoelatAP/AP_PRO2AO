@@ -1,4 +1,4 @@
-﻿namespace Oefening02_DILogin;
+﻿namespace Oefening_03_02_DILogin;
 public class AlwaysLoginAdapter : ILogin
 {
     public bool Login(string username, string password)

@@ -1,5 +1,4 @@
-﻿namespace Voorbeeld01_HelloCore;
-
+﻿namespace Voorbeeld_04_01_HelloCore;
 public class Startup
 {
     public void ConfigureServices(IServiceCollection services)

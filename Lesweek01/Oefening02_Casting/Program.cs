@@ -1,4 +1,4 @@
-﻿using Oefening02_Casting;
+﻿using Oefening_01_02_Casting;
 
 var shapes = new object[4];
 shapes[0] = new Dot(5, 7);

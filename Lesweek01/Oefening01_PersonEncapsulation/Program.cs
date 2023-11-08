@@ -1,4 +1,4 @@
-﻿using Oefening01_PersonEncapsulation;
+﻿using Oefening_01_01_PersonEncapsulation;
 
 var person = new Person("Dimitri", "Sturm", new DateTime(1984, 06, 22));
 Console.WriteLine($"{person.FullName} is {person.Age} jaar ");

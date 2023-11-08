@@ -1,6 +1,6 @@
-﻿using Voorbeeld02_HelloCore.Services;
+﻿using Voorbeeld_04_02_HelloCore.Services;
 
-namespace Voorbeeld02_HelloCore;
+namespace Voorbeeld_04_02_HelloCore;
 
 public class Startup
 {
