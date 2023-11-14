@@ -66,18 +66,28 @@ namespace Voorbeeld_07_01_EFSamurai.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("BattleId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BattleId");
-
                     b.ToTable("Samurais");
+                });
+
+            modelBuilder.Entity("Voorbeeld_07_01_EFSamurai.SamuraiBattle", b =>
+                {
+                    b.Property<int>("BattleId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SamuraiId")
+                        .HasColumnType("int");
+
+                    b.HasKey("BattleId", "SamuraiId");
+
+                    b.HasIndex("SamuraiId");
+
+                    b.ToTable("SamuraiBattle");
                 });
 
             modelBuilder.Entity("Voorbeeld_07_01_EFSamurai.Quote", b =>
@@ -91,23 +101,35 @@ namespace Voorbeeld_07_01_EFSamurai.Migrations
                     b.Navigation("Samurai");
                 });
 
-            modelBuilder.Entity("Voorbeeld_07_01_EFSamurai.Samurai", b =>
+            modelBuilder.Entity("Voorbeeld_07_01_EFSamurai.SamuraiBattle", b =>
                 {
-                    b.HasOne("Voorbeeld_07_01_EFSamurai.Battle", null)
-                        .WithMany("Samurais")
+                    b.HasOne("Voorbeeld_07_01_EFSamurai.Battle", "Battle")
+                        .WithMany("SamuraiBattles")
                         .HasForeignKey("BattleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("Voorbeeld_07_01_EFSamurai.Samurai", "Samurai")
+                        .WithMany("SamuraiBattles")
+                        .HasForeignKey("SamuraiId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Battle");
+
+                    b.Navigation("Samurai");
                 });
 
             modelBuilder.Entity("Voorbeeld_07_01_EFSamurai.Battle", b =>
                 {
-                    b.Navigation("Samurais");
+                    b.Navigation("SamuraiBattles");
                 });
 
             modelBuilder.Entity("Voorbeeld_07_01_EFSamurai.Samurai", b =>
                 {
                     b.Navigation("Quotes");
+
+                    b.Navigation("SamuraiBattles");
                 });
 #pragma warning restore 612, 618
         }

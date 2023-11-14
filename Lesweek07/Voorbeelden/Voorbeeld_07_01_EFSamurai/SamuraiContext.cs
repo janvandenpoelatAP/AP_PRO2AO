@@ -13,4 +13,10 @@ public class SamuraiContext : DbContext
         //var connectionString = "server = localhost; port = 3310; database = samurai-db; user=databanken; password=databanken";
         optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
     }
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<SamuraiBattle>()
+            .HasKey(sb => new { sb.BattleId, sb.SamuraiId });
+        base.OnModelCreating(modelBuilder);
+    }
 }
