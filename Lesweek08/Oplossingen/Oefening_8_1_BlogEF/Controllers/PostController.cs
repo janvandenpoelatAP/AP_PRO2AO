@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Oefening_8_1_BlogEF.Entities;
-using Oefening_8_1_BlogEF.ViewModels;
-using Oefening_8_1_BlogEF.Services;
+using Oefening_08_01_BlogEF.Entities;
+using Oefening_08_01_BlogEF.ViewModels;
+using Oefening_08_01_BlogEF.Services;
 
-namespace Oefening_8_1_BlogEF.Controllers;
+namespace Oefening_08_01_BlogEF.Controllers;
 
 [Route("api/[controller]")]
 public class PostController : Controller

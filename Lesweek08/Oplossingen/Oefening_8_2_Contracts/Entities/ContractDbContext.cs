@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Oefening_8_2_EFContracts.Models;
+using Oefening_08_02_EFContracts.Models;
 
-namespace Oefening_8_2_EFContracts.Entities;
+namespace Oefening_08_02_EFContracts.Entities;
 
 public class ContractDbContext : DbContext
 {

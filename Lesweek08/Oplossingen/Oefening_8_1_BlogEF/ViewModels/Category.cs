@@ -1,4 +1,4 @@
-﻿namespace Oefening_8_1_BlogEF.ViewModels;
+﻿namespace Oefening_08_01_BlogEF.ViewModels;
 public class Category
 {
     public int Id { get; set; }

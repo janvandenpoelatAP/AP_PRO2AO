@@ -1,4 +1,4 @@
-using Oefening_8_1_BlogEF;
+using Oefening_08_01_BlogEF;
 
 await Host.CreateDefaultBuilder(args)
     .ConfigureWebHostDefaults(webBuilder =>

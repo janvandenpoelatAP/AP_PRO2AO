@@ -1,4 +1,4 @@
-﻿namespace Oefening_8_2_EFContracts.Models;
+﻿namespace Oefening_08_02_EFContracts.Models;
 
 public class Contract
 {

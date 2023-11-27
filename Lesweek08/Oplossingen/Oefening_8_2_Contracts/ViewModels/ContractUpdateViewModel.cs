@@ -1,6 +1,6 @@
-﻿using Oefening_8_2_EFContracts.Models;
+﻿using Oefening_08_02_EFContracts.Models;
 
-namespace Oefening_8_2_EFContracts.ViewModels
+namespace Oefening_08_02_EFContracts.ViewModels
 {
     public class ContractUpdateViewModel
     {

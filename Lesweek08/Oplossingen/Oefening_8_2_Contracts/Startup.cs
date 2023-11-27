@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Oefening_8_2_EFContracts.Entities;
-using Oefening_8_2_EFContracts.Services;
+using Oefening_08_02_EFContracts.Entities;
+using Oefening_08_02_EFContracts.Services;
 
-namespace Oefening_8_2_EFContracts;
+namespace Oefening_08_02_EFContracts;
 
 public class Startup
 {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Oefening_7_1_EFMigrations;
+namespace Oefening_07_01_EFMigrations;
 
 internal class Program
 {

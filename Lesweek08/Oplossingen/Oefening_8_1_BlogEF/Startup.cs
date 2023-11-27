@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Oefening_8_1_BlogEF.Services;
-using Oefening_8_1_BlogEF.Entities;
+using Oefening_08_01_BlogEF.Services;
+using Oefening_08_01_BlogEF.Entities;
 
-namespace Oefening_8_1_BlogEF;
+namespace Oefening_08_01_BlogEF;
 
 public class Startup
 {

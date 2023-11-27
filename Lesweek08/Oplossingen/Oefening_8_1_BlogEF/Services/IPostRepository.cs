@@ -1,7 +1,7 @@
-﻿using Oefening_8_1_BlogEF.Entities;
-using Oefening_8_1_BlogEF.ViewModels;
+﻿using Oefening_08_01_BlogEF.Entities;
+using Oefening_08_01_BlogEF.ViewModels;
 
-namespace Oefening_8_1_BlogEF.Services
+namespace Oefening_08_01_BlogEF.Services
 {
     public interface IPostRepository
     {

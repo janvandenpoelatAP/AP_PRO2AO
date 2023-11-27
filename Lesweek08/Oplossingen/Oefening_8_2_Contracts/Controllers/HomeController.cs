@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Oefening_8_2_EFContracts.Models;
-using Oefening_8_2_EFContracts.Services;
-using Oefening_8_2_EFContracts.ViewModels;
+using Oefening_08_02_EFContracts.Models;
+using Oefening_08_02_EFContracts.Services;
+using Oefening_08_02_EFContracts.ViewModels;
 
-namespace Oefening_8_2_EFContracts.Controllers;
+namespace Oefening_08_02_EFContracts.Controllers;
 [Route("[controller]")]
 public class HomeController : Controller
 {
