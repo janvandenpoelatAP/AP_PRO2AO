@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Voorbeeld_10_01_FoodApi.Entities;
+using Voorbeeld_11_01_FoodApi.Entities;
 
 #nullable disable
 
-namespace Voorbeeld_10_01_FoodApi.Migrations
+namespace Voorbeeld_11_01_FoodApi.Migrations
 {
     [DbContext(typeof(DishesDbContext))]
-    [Migration("20231205060108_Initial")]
+    [Migration("20231212052650_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -244,7 +244,7 @@ namespace Voorbeeld_10_01_FoodApi.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Voorbeeld_10_01_FoodApi.Entities.Dish", b =>
+            modelBuilder.Entity("Voorbeeld_11_01_FoodApi.Entities.Dish", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -287,7 +287,7 @@ namespace Voorbeeld_10_01_FoodApi.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Voorbeeld_10_01_FoodApi.Entities.Ingredient", b =>
+            modelBuilder.Entity("Voorbeeld_11_01_FoodApi.Entities.Ingredient", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -427,13 +427,13 @@ namespace Voorbeeld_10_01_FoodApi.Migrations
 
             modelBuilder.Entity("DishIngredient", b =>
                 {
-                    b.HasOne("Voorbeeld_10_01_FoodApi.Entities.Dish", null)
+                    b.HasOne("Voorbeeld_11_01_FoodApi.Entities.Dish", null)
                         .WithMany()
                         .HasForeignKey("DishesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Voorbeeld_10_01_FoodApi.Entities.Ingredient", null)
+                    b.HasOne("Voorbeeld_11_01_FoodApi.Entities.Ingredient", null)
                         .WithMany()
                         .HasForeignKey("IngredientsId")
                         .OnDelete(DeleteBehavior.Cascade)

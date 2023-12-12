@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace Voorbeeld_10_01_FoodApi.Migrations
+namespace Voorbeeld_11_01_FoodApi.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration
