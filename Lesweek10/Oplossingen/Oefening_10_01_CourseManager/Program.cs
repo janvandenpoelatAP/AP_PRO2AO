@@ -26,13 +26,12 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler();
 }
 
+// Teachers Endpoints
+
 var teachersEndpoints = app.MapGroup("/teachers");
 var teachersEndPointsWithGuidId = teachersEndpoints.MapGroup("/{teacherid:guid}");
-var coursesEndpoints = app.MapGroup("/courses");
-var coursesEndPointsWithGuidId = coursesEndpoints.MapGroup("/{courseid:guid}");
-var coursesFromTeacherEndpoints = app.MapGroup("/teachers/{teacherid}/courses");
 
-teachersEndpoints.MapGet("", (
+teachersEndpoints.MapGet("", Ok<IEnumerable<TeacherDto>> (
     CourseDbContext courseDbContext,
     IMapper mapper,
     string? name) =>
@@ -54,6 +53,35 @@ teachersEndPointsWithGuidId.MapGet("", Results<NotFound, Ok<TeacherDto>> (
     return TypedResults.Ok(mapper.Map<TeacherDto>(teacherEntity));
 }).WithName("GetTeacher");
 
+teachersEndpoints.MapPost("", CreatedAtRoute<TeacherDto> (
+    CourseDbContext courseDbContext,
+    IMapper mapper,
+    TeacherForCreationDto teacherForCreationDto) =>
+{
+    var teacherEntity = mapper.Map<Teacher>(teacherForCreationDto);
+    courseDbContext.Add(teacherEntity);
+    courseDbContext.SaveChanges();
+    var teacherToReturn = mapper.Map<TeacherDto>(teacherEntity);
+    return TypedResults.CreatedAtRoute(teacherToReturn, "GetTeacher",
+        new { teacherId = teacherToReturn.Id });
+});
+
+teachersEndPointsWithGuidId.MapPut("", Results<NotFound, NoContent> (
+    CourseDbContext courseDbContext,
+    IMapper mapper,
+    Guid teacherId,
+    TeacherForUpdateDto teacherForUpdateDto) =>
+{
+    var teacherEntity = courseDbContext.Teachers.FirstOrDefault(d => d.Id == teacherId);
+    if (teacherEntity == null)
+    {
+        return TypedResults.NotFound();
+    }
+    teacherEntity.Name = teacherForUpdateDto.Name;
+    courseDbContext.SaveChanges();
+    return TypedResults.NoContent();
+});
+
 teachersEndPointsWithGuidId.MapDelete("", Results<NotFound, NoContent> (
     CourseDbContext courseDbContext,
     Guid teacherId) =>
@@ -69,7 +97,12 @@ teachersEndPointsWithGuidId.MapDelete("", Results<NotFound, NoContent> (
     return TypedResults.NoContent();
 });
 
-coursesEndpoints.MapGet("", (
+// Courses Endpoints
+
+var coursesEndpoints = app.MapGroup("/courses");
+var coursesEndPointsWithGuidId = coursesEndpoints.MapGroup("/{courseid:guid}");
+
+coursesEndpoints.MapGet("", Ok<IEnumerable<CourseDto>> (
     CourseDbContext courseDbContext,
     IMapper mapper,
     string? name) =>
@@ -77,9 +110,20 @@ coursesEndpoints.MapGet("", (
     List<Course> courses = courseDbContext.Courses.ToList();
     return TypedResults.Ok(mapper.Map<IEnumerable<CourseDto>>(
         courseDbContext.Courses.Where(x => name == null || x.Name.Contains(name))));
-
-
 });
+
+coursesEndPointsWithGuidId.MapGet("", Results<NotFound, Ok<CourseDto>> (
+    CourseDbContext courseDbContext,
+    IMapper mapper,
+    Guid courseId) =>
+{
+    var courseEntity = courseDbContext.Courses.FirstOrDefault(x => x.Id == courseId);
+    if (courseEntity == null)
+    {
+        return TypedResults.NotFound();
+    }
+    return TypedResults.Ok(mapper.Map<CourseDto>(courseEntity));
+}).WithName("GetCourse"); 
 
 coursesEndpoints.MapPost("", CreatedAtRoute<Course> (
     CourseDbContext courseDbContext,
@@ -98,16 +142,14 @@ coursesEndPointsWithGuidId.MapPut("", Results<NotFound, NoContent> (
     CourseDbContext courseDbContext,
     IMapper mapper,
     Guid courseId,
-    CourseForCreationDto courseForUpdateDto) =>
+    CourseForUpdateDto courseForUpdateDto) =>
 {
     var courseEntity = courseDbContext.Courses.FirstOrDefault(d => d.Id == courseId);
     if (courseEntity == null)
     {
         return TypedResults.NotFound();
     }
-    courseEntity = mapper.Map<Course>(courseForUpdateDto);
-    courseEntity.Id = courseId;
-    courseDbContext.Update(courseEntity);
+    courseEntity.Name = courseForUpdateDto.Name;
     courseDbContext.SaveChanges();
     return TypedResults.NoContent();
 });
@@ -127,20 +169,9 @@ coursesEndPointsWithGuidId.MapDelete("", Results<NotFound, NoContent> (
     return TypedResults.NoContent();
 });
 
+// CoursesFromTeachers Endpoints
 
-
-teachersEndpoints.MapPost("", CreatedAtRoute<TeacherDto> (
-    CourseDbContext courseDbContext,
-    IMapper mapper,
-    TeacherForCreationDto teacherForCreationDto) =>
-{
-    var teacherEntity = mapper.Map<Teacher>(teacherForCreationDto);
-    courseDbContext.Add(teacherEntity);
-    courseDbContext.SaveChanges();
-    var teacherToReturn = mapper.Map<TeacherDto>(teacherEntity);
-    return TypedResults.CreatedAtRoute(teacherToReturn, "GetTeacher",
-        new { teacherId = teacherToReturn.Id });
-});
+var coursesFromTeacherEndpoints = app.MapGroup("/teachers/{teacherid}/courses");
 
 coursesFromTeacherEndpoints.MapGet("", (
     CourseDbContext courseDbContext,
@@ -150,7 +181,9 @@ coursesFromTeacherEndpoints.MapGet("", (
     return mapper.Map<IEnumerable<CourseDto>>(courseDbContext.Teachers
        .Include(x => x.Courses)
        .FirstOrDefault(x => x.Id == teacherId)?.Courses);
-}).WithName("GetCourse"); ;
+}); ;
+
+// Recontruct dB when starting up application
 
 using (var serviceScope = app.Services.GetService<IServiceScopeFactory>().CreateScope())
 {
